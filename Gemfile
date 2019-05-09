@@ -10,7 +10,11 @@ gem 'thin'
 gem 'shotgun'
 gem 'pry'
 
+gem 'rack-flash3'
+gem 'tux'
+
 group :test do
+  gem 'launchy'
   gem 'rspec'
   gem 'capybara'
   gem 'rack-test'

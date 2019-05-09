@@ -1,0 +1,19 @@
+<h1><%= @genre.name.capitalize %> Songs:</h1>
+<a href="/genres">Back</a>
+<a href="/">Home</a>
+
+<ul>
+    <% @genre.songs.each do |song| %>
+        <li>
+            <h2><a href="/songs/<%="#{song.slug}"%>"><%= song.name %> </a></h2>
+        </li>
+    <% end %>
+</ul>
+
+<ul>
+    <% @genre.artists.each do |artist| %>
+        <li>
+            <h2><a href="/artists/<%="#{artist.slug}"%>"><%= artist.name %></a></h2>
+        </li>
+    <% end %>
+</ul>
