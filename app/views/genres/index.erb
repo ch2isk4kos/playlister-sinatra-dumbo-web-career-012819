@@ -2,9 +2,11 @@
 <a href="/">Home</a>
 <a href="/artists">Artists</a>
 <a href="/songs">Songs</a>
-<a href="/genres">Genres</a><br>
 
 <% @genres.each do |genre| %>
-    <br>
-    <li><a href="/genres/<%="#{genre.slug}"%>"> <%= genre.name %></a></li>
+    <ul>
+        <li>
+            <h2><a href="/genres/<%="#{genre.slug}"%>"> <%= genre.name %></a></h2>
+        </li>
+    </ul>
 <% end %>

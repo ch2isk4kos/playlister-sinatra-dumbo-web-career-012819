@@ -1,7 +1,12 @@
 <h1>Artist INdex</h1>
+<a href="/">Home</a>
+<a href="/songs">Songs</a>
+<a href="/genres">Genres</a>
 
 <% @artists.each do |artist| %>
-    <li><a href="/artists/<%="#{artist.slug}"%>"><%= artist.name %></a></li>
+    <ul>
+        <li>
+            <h2><a href="/artists/<%="#{artist.slug}"%>"><%= artist.name %></a></h2>
+        </li>
+    </ul>
 <% end %>
-
-<a href="/">Home</a>
